@@ -140,8 +140,6 @@ function nextQuestion() {
  */
 function checkAns() {
     const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
-    let correctAns = document.querySelector('input[name="answer"]').text;
-
     if (Questions[currQuestion].a[selectedAns].isCorrect) {
         alert("Hey! You got it right!");
         incrementScore();
