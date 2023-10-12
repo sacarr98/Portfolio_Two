@@ -65,22 +65,26 @@ function loadQues() {
 
 loadQues();
 
+
 /**
- * Gets the current score from the DOM and increments it by 1
+ *  Increments the players final score to be displayed once quiz is finished
  */
-function incrementScore() {
-
-    let oldscore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldscore;
-
+function loadScore() {
+    const totalScore = document.getElementById("score");
+    totalScore.textContent = `You scored ${score} out of ${Questions.length}`;
 }
 
 /**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ *  Loads next question, if all questions complete loads final score page
  */
-function incrementWrongAnswer() {
-
-    let oldscore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldscore;
-
+function nextQuestion() {
+    if (currQuestion < Questions.length - 1) {
+        currQuestion++;
+        loadQues();
+    } else {
+        document.getElementById("opt").remove();
+        document.getElementById("ques").remove();
+        document.getElementById("btn").remove();
+        loadScore();
+    }
 }
