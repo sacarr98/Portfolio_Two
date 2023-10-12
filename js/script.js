@@ -31,3 +31,12 @@ const Questions = [{
 
 let currQuestion = 0;
 let score = 0;
+
+function loadQues() {
+    const question = document.getElementById("ques");
+    const opt = document.getElementById("opt");
+
+    question.textContent = Questions[currQuestion].q;
+    opt.innerHTML = "";
+
+}
