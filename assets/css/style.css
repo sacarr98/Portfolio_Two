@@ -6,3 +6,20 @@ body {
     color: #445361;
     text-align: center;
 }
+
+
+button {
+    margin-right: 75px;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 30px;
+    color: darkslategray;
+}
