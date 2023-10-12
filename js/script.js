@@ -178,8 +178,12 @@ function handleSubmit(event) {
     } else {
         usernames.push(username.value);
         console.log(usernames);
+        let htmlResponse2 = `Hi ${username.value} thanks for signing up!`;
 
-        form.submit();
+        let helloDiv = document.getElementById("hello");
+        helloDiv.innerHTML = htmlResponse2;
+        helloDiv.style.display = 'block';
+
     }
 
 }
@@ -187,3 +191,20 @@ function handleSubmit(event) {
 /**
  *  User Feedback
  */
+
+let userFeedback;
+let feedbackForm = document.getElementById("feedback-form");
+form.addEventListener('submit', handleSubmit2);
+
+function handleSubmit2(event) {
+    event.preventDefault();
+    userFeedback = document.getElementById("feedback").value;
+    console.log(userFeedback);
+    let htmlResponse = "<p>Thanks for leaving us a message! We'll be sure to get back to you soon</p>";
+
+    let responseDiv = document.getElementById("response-message");
+    responseDiv.innerHTML = htmlResponse;
+    responseDiv.style.display = 'block';
+
+
+}
