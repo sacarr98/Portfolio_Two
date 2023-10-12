@@ -158,3 +158,32 @@ function escape() {
     document.getElementById("exit").remove();
     congratulations();
 }
+
+/**
+ *  Allows player to choose a username
+ */
+let usernames = [];
+
+let form = document.getElementById("registration-form");
+
+form.addEventListener('submit', handleSubmit);
+
+let errorMsg = document.getElementById("errors");
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    if (usernames.includes(username.value)) {
+        errorMsg.innerHTML = "<p>Sorry, the username <name> is already in use. Please choose another username.</p>";
+    } else {
+        usernames.push(username.value);
+        console.log(usernames);
+
+        form.submit();
+    }
+
+}
+
+/**
+ *  User Feedback
+ */

@@ -92,5 +92,53 @@ footer {
     font-size: 125%;
     text-decoration: none;
     color: black;
-    padding-top: 40px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+/* Signup page */
+h3 {
+    text-align: center;
+    font-size: 175%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form {
+    text-align: center;
+    font-size: 150%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#submit-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Feedback page */
+#feedback {
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+#feedback-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
 }

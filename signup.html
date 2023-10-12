@@ -16,14 +16,22 @@
     <title>Test Yor General Knowledge</title>
   </head>
   <body>
-    <h3>Please provide us with any feedback:</h3>
+    <h3>Create a Username:</h3>
+    <p id="errors"></p>
     <form
-      id="feedback-form"
+      id="registration-form"
       method="POST"
       action="https://formdump.codeinstitute.net/"
     >
-      <textarea id="feedback" name="feedback" type="text"></textarea>
-      <input id="feedback-btn" type="submit" />
+      <div class="username">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" required />
+      </div>
+      <div class="password">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" required />
+      </div>
+      <input id="submit-btn" type="submit" />
     </form>
     <footer>
       <a href="index.html">Quiz Home</a>
