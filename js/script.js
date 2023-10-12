@@ -93,7 +93,7 @@ loadQues();
 
 
 /**
- *  Increments the players final score to be displayed once quiz is finished
+ *  Displays a congratulations message when player completes the quiz 
  */
 function congratulations() {
     const congratsMessage = document.getElementById("congratulations");
@@ -130,19 +130,33 @@ function nextQuestion() {
         document.getElementById("opt").remove();
         document.getElementById("ques").remove();
         document.getElementById("btn").remove();
+        document.getElementById("exit").remove();
         congratulations();
     }
 }
 
+/**
+ *  Checks players answer and loads the increment right/wrong answer function accordingly
+ */
 function checkAns() {
     const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
+    let correctAns = document.querySelector('input[name="answer"]').text;
 
     if (Questions[currQuestion].a[selectedAns].isCorrect) {
+        alert("Hey! You got it right!");
         incrementScore();
-        console.log("Correct");
         nextQuestion();
     } else {
+        alert("Awwww... better luck next time");
         incrementWrongAnswer();
         nextQuestion();
     }
+}
+
+function escape() {
+    document.getElementById("opt").remove();
+    document.getElementById("ques").remove();
+    document.getElementById("btn").remove();
+    document.getElementById("exit").remove();
+    congratulations();
 }
