@@ -30,7 +30,6 @@ const Questions = [{
 ];
 
 let currQuestion = 0;
-let score = 0;
 
 
 /**
@@ -69,9 +68,28 @@ loadQues();
 /**
  *  Increments the players final score to be displayed once quiz is finished
  */
-function loadScore() {
-    const totalScore = document.getElementById("score");
-    totalScore.textContent = `You scored ${score} out of ${Questions.length}`;
+function congratulations() {
+    const congratsMessage = document.getElementById("congratulations");
+    congratsMessage.textContent = `Well done for Completing the Quiz!`;
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore() {
+
+    let oldscore = parseInt(document.getElementById("correct_score").innerText);
+    document.getElementById("correct_score").innerText = ++oldscore;
+
+}
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
+function incrementWrongAnswer() {
+
+    let oldscore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldscore;
+
 }
 
 /**
@@ -85,6 +103,19 @@ function nextQuestion() {
         document.getElementById("opt").remove();
         document.getElementById("ques").remove();
         document.getElementById("btn").remove();
-        loadScore();
+        congratulations();
+    }
+}
+
+function checkAns() {
+    const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
+
+    if (Questions[currQuestion].a[selectedAns].isCorrect) {
+        incrementScore();
+        console.log("Correct");
+        nextQuestion();
+    } else {
+        incrementWrongAnswer();
+        nextQuestion();
     }
 }
