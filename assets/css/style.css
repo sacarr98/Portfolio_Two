@@ -24,3 +24,31 @@ button {
     font-size: 30px;
     color: darkslategray;
 }
+
+.panel {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(103, 103, 110);
+}
+
+.question {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+
+.options {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
