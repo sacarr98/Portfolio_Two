@@ -15,7 +15,7 @@ h1 {
     font-size: 250%;
     text-shadow: -1px 1px 0 #000;
     color: #445361;
-    background-color: rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .panel {
@@ -25,7 +25,7 @@ h1 {
     align-items: center;
     justify-content: center;
     color: rgb(81, 81, 86);
-    background-color: rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .question {
@@ -36,7 +36,8 @@ h1 {
 }
 
 .options {
-    font-size: 150%;
+    font-size: 175%;
+    text-shadow: -1px 1px 0 #000;
     font-family: "Raleway", sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -60,7 +61,8 @@ button {
 
 .score-area {
     padding-top: 20px;
-    font-size: 1.2rem;
+    font-size: 150%;
+    text-shadow: -1px 1px 0 #000;
     text-align: center;
 }
 
@@ -75,11 +77,20 @@ button {
 }
 
 #congratulations {
-    font-size: 30px;
+    font-size: 200%;
+    text-shadow: -1px 1px 0 #000;
     font-family: "Raleway", sans-serif;
     color: darkslategray;
 }
 
 #exit {
     background-color: grey;
+}
+
+footer {
+    text-align: center;
+    font-size: 125%;
+    text-decoration: none;
+    color: black;
+    padding-top: 40px;
 }
