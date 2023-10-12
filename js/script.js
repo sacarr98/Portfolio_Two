@@ -25,6 +25,33 @@ const Questions = [{
     { text: "Eight", isCorrect: false }
     ]
 
+},
+{
+    q: "Which religion has a God specified for each Rain, Money, Children, and Love?",
+    a: [{ text: "Islam", isCorrect: false },
+    { text: "Buddism", isCorrect: false },
+    { text: "Hinduism", isCorrect: true },
+    { text: "Jainism", isCorrect: false }
+    ]
+
+},
+{
+    q: "What is the currency of Pakistan?",
+    a: [{ text: "Pound", isCorrect: false },
+    { text: "Euro", isCorrect: false },
+    { text: "Riyal", isCorrect: false },
+    { text: "Rupee", isCorrect: true }
+    ]
+
+},
+{
+    q: "Which popular Disney show was Miley Cyrus part of?",
+    a: [{ text: "Hannah Montanna", isCorrect: true },
+    { text: "Two Broke Girls", isCorrect: false },
+    { text: "Live it like Beckham", isCorrect: false },
+    { text: "Suite life of Jack and Cody", isCorrect: false }
+    ]
+
 }
 
 ];
