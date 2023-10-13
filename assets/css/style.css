@@ -155,14 +155,27 @@ form {
 
     .question {
         font-size: 150%;
+        text-shadow: -0.5px 0.5px 0 #000;
     }
 
     .options {
         font-size: 125%;
+        text-shadow: -0.5px 0.5px 0 #000;
     }
 
     .score-area {
         font-size: 125%;
+        text-shadow: -0.5px 0.5px 0 #000;
+    }
+
+    footer {
+        font-size: 75%;
+    }
+
+    button {
+        margin-top: 2.5%;
+        font-size: 75%;
+        padding: 75%;
     }
 
 }
@@ -175,13 +188,26 @@ form {
 
     .question {
         font-size: 100%;
+        text-shadow: -0.25px 0.25px 0 #000;
     }
 
     .options {
         font-size: 75%;
+        text-shadow: -0.25px 0.25px 0 #000;
     }
 
     .score-area {
         font-size: 75%;
+        text-shadow: -0.25px 0.25px 0 #000;
+    }
+
+    footer {
+        font-size: 50%;
+    }
+
+    button {
+        margin-top: 1.25%;
+        font-size: 50%;
+        padding: 50%;
     }
 }
