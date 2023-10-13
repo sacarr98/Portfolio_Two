@@ -70,9 +70,7 @@ The imagery used was kept minimal as to not distract the players from the quiz, 
 
 ### Wireframes
 
-<img src="assets/images/index_wireframe.PNG" alt="Wire fame of index page" title="Index page">
-<img src="assets/images/content_wireframe.PNG" alt="Wire frame of content pages" title="Practices pages">
-<img src="assets/images/signupform_wireframe.PNG" alt="wire frame of sign-up page" title="Sign-up page">
+<img src="assets/images/quiz_wireframe.PNG" alt="Wire fame of index page" title="Index page">
 
 ## Features
 
