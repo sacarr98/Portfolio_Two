@@ -148,7 +148,40 @@ form {
 @media screen and (max-width: 1200px) {}
 
 /* For medium screens sizes from 950px wide and down */
-@media screen and (max-width: 950px) {}
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 225%;
+    }
+
+    .question {
+        font-size: 150%;
+    }
+
+    .options {
+        font-size: 125%;
+    }
+
+    .score-area {
+        font-size: 125%;
+    }
+
+}
 
 /* For small screens sizes from 800px wide and down */
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 175%;
+    }
+
+    .question {
+        font-size: 100%;
+    }
+
+    .options {
+        font-size: 75%;
+    }
+
+    .score-area {
+        font-size: 75%;
+    }
+}
