@@ -3,10 +3,9 @@
 'Test your general knowledge' is an online quiz game with general knowledge questions. The website is aimed at people aged 10 and up, although some questions are more challenging and some more straight forward. The website is designed to be fun and engaging, allowing users to create their own username and provide feedback on the type of questions they'd like to be included.
 
 Below you can see the site on different screen sizes. Taken from [Am I responsive](https://amiresponsive.co.uk/).
-<img src="assets/images/deployedsite.PNG" alt="Test your general knowledge website on different screen sizes" title="Test your general knowledge website on different screen sizes>
+<img src="assets/images/Portfolio2_depoloyed_site.PNG" alt="Test your general knowledge website on different screen sizes" title="Test your general knowledge website on different screen sizes>
 
-The live site can be found [here](https://sacarr98.github.io/Portfolio_1/)
-
+The live site can be found [here](https://sacarr98.github.io/Portfolio_Two/)
 ---
 
 ## CONTENTS

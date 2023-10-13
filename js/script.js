@@ -172,11 +172,12 @@ let errorMsg = document.getElementById("errors");
 
 function handleSubmit(event) {
     event.preventDefault();
+    let username = document.getElementById("username").value;
 
     if (usernames.includes(username.value)) {
         errorMsg.innerHTML = "<p>Sorry, the username <name> is already in use. Please choose another username.</p>";
     } else {
-        usernames.push(username.value);
+        usernames.push(username);
         console.log(usernames);
         let htmlResponse2 = `Hi ${username.value} thanks for signing up!`;
 

@@ -1,9 +1,8 @@
 # Test Your General Knowledge -  Testing
 
-![Test Your General Knowledge shown on a variety of screen sizes](assets/images/the-quiz-arms.png)
+![Test Your General Knowledge shown on a variety of screen sizes](assets/images/Portfolio2_depoloyed_site.png)
 
-Visit the deployed site: [Test Your General Knowledge](https://kera-cudmore.github.io/TheQuizArms/)
-
+Visit the deployed site: [Test Your General Knowledge](https://sacarr98.github.io/Portfolio_Two/)
 - - -
 
 ## CONTENTS
@@ -33,13 +32,10 @@ I have analysed each page using google chrome developer tools to ensure the resp
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](testing/w3/w3-index.png) - Passed, no errors or warnings to show.
-* [mind.html](testing/w3/w3-game.png) - Passed, no errors or warnings to show.
-* [body.html](testing/w3/w3-highscores.png) - Passed, no errors or warnings to show.
-* [soul.html](testing/w3/w3-404.png) - Passed, no errors or warnings to show.
-* [subscribe].html](testing/w3/w3-500.png) - Passed, no errors or warnings to show.
-
-* [style.css](testing/w3/w3-css.png) - Passed, no errors or warnings to show.
+* [index.html] - Passed, no errors or warnings to show.
+* [signup.html] - Passed, no errors or warnings to show.
+* [feedback.html] - Passed, no errors or warnings to show.
+* [style.css] - Passed, no errors or warnings to show.
 
 ### Lighthouse
 
@@ -47,17 +43,21 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Results
 
-All pages achieved 100 for SEO, a minimum of 92 for best practices, and 93 for accessibility. The scores for performance however were quite low, this was due to the image formats I used. This will effect the load time of the site, in future I will use alternative formatting for my images to ensure better performance.
+All pages achieved a minimum of 92 for best practices, and an average of 88 for performance.
 
-![index.html](assets/images/index_lighthouse.PNG)
+![index.html](assets/images/Quiz_home_lighthouse.PNG)
 
-![mind.html](assets/images/mind_lighthouse.PNG)
+![signup.html](assets/images/Signup_page_lighthouse.PNG)
 
-![body.html](assets/images/body_lighthouse.PNG)
+![feedback.html](assets/images/feedback_lighthouse.PNG)
 
-![soul.html](assets/images/soul_lighthouse.PNG)
+### JSHint
 
-![subscribe.html](assets/images/subscribe_lighthouse.PNG)
+I used JSHint to evaluate the JavaScript Code.
+
+### Results
+
+It was found that one variable was undefined (username) resulting in errors on the signup page, this has since been resolved.
 
 ## MANUAL TESTING
 
