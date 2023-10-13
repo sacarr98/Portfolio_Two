@@ -142,3 +142,13 @@ form {
     border: none;
     cursor: pointer;
 }
+
+/* Media Queries */
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px) {}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px) {}
+
+/* For small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px) {}
