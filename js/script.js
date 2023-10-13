@@ -71,7 +71,7 @@ function loadQues() {
     question.textContent = Questions[currQuestion].Qs;
     opt.innerHTML = "";
 
-    for (let i = 0; i < Questions[currQuestion].a.length; i++) {
+    for (let i = 0; i < Questions[currQuestion].As.length; i++) {
         const choicesdiv = document.createElement("div");
         const choice = document.createElement("input");
         const choiceLabel = document.createElement("label");
