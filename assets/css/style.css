@@ -109,6 +109,7 @@ h3 {
 
 form {
     text-align: center;
+    padding-top: 20px;
     font-size: 150%;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -127,9 +128,10 @@ form {
 
 /* Feedback page */
 #feedback {
-    width: 50%;
+    width: 60%;
     margin: 20px;
     padding: 20px;
+    box-align: center;
 }
 
 #feedback-btn {
@@ -170,13 +172,23 @@ form {
     }
 
     footer {
-        font-size: 100%;
+        font-size: 125%;
     }
 
     button {
         margin-top: 2.5%;
         font-size: 75%;
         padding: 7.5px 15px;
+    }
+
+    /*Feedback*/
+    #feedback-btn {
+        font-size: 15px;
+        padding: 7.5px 15px;
+    }
+
+    #feedback {
+        width: 100%;
     }
 
 }
@@ -233,5 +245,17 @@ form {
         margin-top: 2.5%;
         font-size: 75%;
         padding: 5px 10px;
+    }
+
+    /*feedback Page*/
+
+    #feedback-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+
+    #feedback {
+        width: 80%;
     }
 }
